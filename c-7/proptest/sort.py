@@ -14,5 +14,6 @@ def test_sorted_result_is_ordered(a_list):
     for i in range(len(a_list) - 1):
         assert a_list[i] <= a_list[i + 1]
 
-@given(some.intergers)
+
+@given(some.intergers())
 @given(some.intergers(min_value=5, max_value=10).map(lambda x: x * 2)
